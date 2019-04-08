@@ -1,4 +1,7 @@
 # api-spec-converter
+
+This is a fork of https://github.com/LucyBot-Inc/api-spec-converter, with google-discovery-to-swagger and raml-to-swagger removed due to security vulnerabilities.
+
 [![Share on Twitter][twitter-image]][twitter-link]
 
 [![Chat on gitter][gitter-image]][gitter-link]
