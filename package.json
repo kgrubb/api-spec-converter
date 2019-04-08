@@ -1,18 +1,20 @@
 {
-  "name": "api-spec-converter",
+  "name": "@itentialopensource/api-spec-converter",
   "version": "2.7.32",
+  "private": false,
   "engines": {
     "node": ">=6.0.0"
   },
-  "description": "Convert API descriptions between popular formats such as OpenAPI(fka Swagger), RAML, API Blueprint, WADL, etc.",
+  "description": "Fork of api-spec-converter. Convert API descriptions between popular formats such as OpenAPI(fka Swagger), RAML, API Blueprint, WADL, etc.",
   "main": "index.js",
   "scripts": {
     "browserify": "node node_modules/mkdirp/bin/cmd dist && browserify -s APISpecConverter -o dist/api-spec-converter.js .",
-    "test": "mocha && npm run browserify && karma start --single-run && git checkout -- dist"
+    "test": "mocha && npm run browserify && karma start --single-run && git checkout -- dist",
+    "publish": "npm publish --access=public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucybot/api-spec-converter.git"
+    "url": "https://github.com/kgrubb/api-spec-converter.git"
   },
   "keywords": [
     "API",
